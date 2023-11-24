@@ -4,16 +4,16 @@ const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
-yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Yay, see you on the 18th!";
+noBtn.addEventListener("click", () => {
+  question.innerHTML = "I am sorry :(";
   gif.src =
     "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
 });
 
-noBtn.addEventListener("mouseover", () => {
-  const noBtnRect = noBtn.getBoundingClientRect();
-  const maxX = window.innerWidth - noBtnRect.width;
-  const maxY = window.innerHeight - noBtnRect.height;
+yesBtn.addEventListener("mouseover", () => {
+  const yesBtnRect = yesBtn.getBoundingClientRect();
+  const maxX = window.innerWidth - yesBtnRect.width;
+  const maxY = window.innerHeight - yesBtnRect.height;
 
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
