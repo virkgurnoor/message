@@ -4,7 +4,7 @@ const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
-noBtn.addEventListener("click", () => {
+yesBtn.addEventListener("click", () => {
   question.innerHTML = "I am sorry :(";
   gif.src =
     "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
