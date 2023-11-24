@@ -1,8 +1,8 @@
 const wrapper = document.querySelector(".wrapper");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
-const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
+const yesBtn = document.querySelector(".yes-btn");
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "I am sorry :(";
@@ -18,6 +18,6 @@ yesBtn.addEventListener("mouseover", () => {
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
 
-  noBtn.style.left = randomX + "px";
-  noBtn.style.top = randomY + "px";
+  yesBtn.style.left = randomX + "px";
+  yesBtn.style.top = randomY + "px";
 });
